@@ -3,14 +3,14 @@ import { LoginData } from '../Interfaces/LoginData';
 import { Usuario } from '../Interfaces/Usuario';
 
 const apiClient = axios.create({
-    baseURL: 'https://localhost:44321/api',
+    baseURL: 'http://localhost:5165/api',
     headers:{
         'Content-Type': 'application/json'
     }
 })
 
-export const Login =(loginData: LoginData)=>{
-    return apiClient.post('/LoginController/Login', loginData)
+export const LoginAPI =(loginData: LoginData)=>{
+    return apiClient.post('/Login/login', loginData)
 }
 
 export const CriarUsuario = (dadosUsuario: Usuario) =>{
