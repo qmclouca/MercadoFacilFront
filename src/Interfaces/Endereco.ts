@@ -1,7 +1,7 @@
 import { EntidadeBase } from "./EntidadeBase";
 
 export interface Endereco {
-    dadosEntidade: EntidadeBase,
+    dadosEntidade: EntidadeBase | null,
     street: string | null,
     number: string | null,
     complement: string | null,
