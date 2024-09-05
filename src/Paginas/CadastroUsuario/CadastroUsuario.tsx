@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useForm, useFieldArray } from 'react-hook-form';
+import { CriarUsuario } from '../../Servicos/MercadoFacilAPI';
 
 const UserForm = () => {
     const { register, handleSubmit, control } = useForm()
@@ -9,7 +10,12 @@ const UserForm = () => {
     });
     const onSubmit = (data: any) => {
         console.log(data);
-        //POST request to the server
+        try {
+           CriarUsuario(data);
+        }
+        catch (error) {
+            console.error(error);
+        }        
     }
 
     return (
