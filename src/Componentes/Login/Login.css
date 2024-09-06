@@ -1,0 +1,67 @@
+/* Contêiner que coloca a imagem à esquerda e o formulário à direita */
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 25px; /* Ajusta o tamanho da barra de navegação */
+}
+
+/* Estilizando o formulário */
+.LoginForm {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Estilizando o formulário para que os inputs e o botão fiquem em linha */
+.login-form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.login-form-inline input {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #7e7878;
+    border-radius: 4px;
+}
+
+.submit-button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    background-color: #24394f;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #37577a;
+}
+
+/* Estilizando a imagem */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0px;
+}
+
+.image-container img {
+    transform: scale(0.1);
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+/* Estilizando o título */
+.spacer {
+    flex: 1;
+    text-align: left;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
