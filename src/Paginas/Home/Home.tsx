@@ -1,10 +1,10 @@
-import Login from '../../Componentes/Login/Login';
+import NavBar from '../../Componentes/NavBar/NavBar';
 import './Home.css';
 const Home = () => {
     return(
         <>
             <div>
-                <Login/>
+                <NavBar/>
             </div>
         </>        
     );
