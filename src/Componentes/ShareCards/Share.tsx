@@ -1,3 +1,4 @@
+import { ShareCardProps } from '../../Interfaces/ShareCardProps';
 import './Share.css'; 
 
 
