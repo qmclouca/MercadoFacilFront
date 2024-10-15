@@ -3,13 +3,13 @@ import { LoginData } from '../Interfaces/LoginData';
 import { Usuario } from '../Interfaces/Usuario';
 
 const apiClient = axios.create({
-    baseURL: 'https://6z5hd4hf-5165.brs.devtunnels.ms/api',
+    baseURL: 'http://localhost:5165/api',
     headers:{
         'Content-Type': 'application/json'
     }
 })
 
-export const LoginAPI =(loginData: LoginData)=>{
+export const LoginAPI = (loginData: LoginData) => {  
     return apiClient.post('/Login/login', loginData)
 }
 
@@ -25,7 +25,7 @@ export const DeletarUsuario = (id: string) =>{
     return apiClient.delete(`/UserController/DeleteUser/${id}`)
 }
 
-export const ListarUsuarios = () =>{
+export const ListarUsuarios = () =>{    
     return apiClient.get('/UserController/GetAll')
 }
 
