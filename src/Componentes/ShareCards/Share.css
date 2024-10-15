@@ -1,0 +1,42 @@
+.card-extra-styles {
+    width: 120px;
+    height: 120px;
+    background-color: hwb(40 20% 77%);
+    border-radius: 15px;
+    border-width: 3px;
+    box-shadow: #72a24d 3px 3px 3px 5px;
+    border-style: ridge;   
+    padding: 5px; 
+}
+.card-title {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 3px;
+
+}
+.share-card__image {
+    padding: 2px;
+   
+    border-radius: 10px;
+    align-content: center;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+
+}
+.card-body {
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+.card-text{
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3px;
+}
