@@ -1,0 +1,25 @@
+.carousel-item .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carousel-item .col-4 {
+    flex: 1 0 33.3333%; /* Garante que cada coluna ocupe 1/3 da linha */
+    max-width: 33.3333%;
+    padding: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-4 {
+    margin: 25px; /* Espaçamento horizontal e vertical */
+}
+.card-spacing {
+    margin: 25px;
+}
