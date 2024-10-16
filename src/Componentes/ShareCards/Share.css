@@ -1,5 +1,5 @@
 .card-extra-styles {
-    width: 120px;
+    width: 240px;
     height: 120px;
     background-color: hwb(40 20% 77%);
     border-radius: 15px;
@@ -7,6 +7,7 @@
     box-shadow: #72a24d 3px 3px 3px 5px;
     border-style: ridge;   
     padding: 5px; 
+    margin: 10px;
 }
 .card-title {
     text-align: center;
